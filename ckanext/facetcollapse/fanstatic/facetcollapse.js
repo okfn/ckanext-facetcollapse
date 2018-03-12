@@ -5,8 +5,11 @@ $( document ).ready(function() {
     $(this).next(".module-footer").andSelf().wrapAll("<div class='collapse' />");
   });
 
-  // expand first nav
-  $(".secondary .filters nav").first().parent().addClass("in").parent().addClass("expanded");
+  // if set as default state, expand first nav
+  $(".secondary .filters[data-collapse-default='expand-first'] nav").first().parent().addClass("in").parent().addClass("expanded");
+
+  // if set as default state, expand all navs
+  $(".secondary .filters[data-collapse-default='expand-all'] nav").parent().addClass("in").parent().addClass("expanded");
 
   // add collapsed class to modules
   $(".secondary .filters .collapse:not(.in)").parent().addClass("collapsed");
