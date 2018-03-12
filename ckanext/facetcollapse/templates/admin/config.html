@@ -9,6 +9,7 @@
   {{ form.select('ckanext.facetcollapse.default', id='facetcollapse_default', label=_('Facet default'), options=[
     {'text': 'Collapse all', 'value': 'expand-none'},
     {'text': 'Collapse all but first', 'value': 'expand-first'},
+    {'text': 'Collapse empty', 'value': 'expand-navs'},
     {'text': 'Collapse none', 'value': 'expand-all'}], selected=data['ckanext.facetcollapse.default'
   ], error=error) }}
 
