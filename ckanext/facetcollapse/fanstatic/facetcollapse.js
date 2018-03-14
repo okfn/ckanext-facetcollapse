@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   // wrap the collapsible elements
   $(".secondary .filters nav").each(function(){
-    $(this).next(".module-footer").andSelf().wrapAll("<div class='collapse' />");
+    $(this).next(".module-footer").addBack().wrapAll("<div class='collapse' />");
   });
 
   $(".secondary .filters .empty").wrap("<div class='collapse' />").closest(".module").addClass("nothing-to-reveal");

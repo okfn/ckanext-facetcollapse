@@ -2,12 +2,12 @@ import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
 from six import text_type
-from ckan.plugins.toolkit import config
+
 
 def facetcollapse_default():
     '''facetcollapse helper function.'''
 
-    return config['ckanext.facetcollapse.default']
+    return toolkit.config.get('ckanext.facetcollapse.default', 'collapse')
 
 
 class FacetcollapsePlugin(plugins.SingletonPlugin):
@@ -21,10 +21,8 @@ class FacetcollapsePlugin(plugins.SingletonPlugin):
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('fanstatic', 'facetcollapse')
 
-
     def get_helpers(self):
         return {'facetcollapse_default': facetcollapse_default}
-
 
     def update_config_schema(self, schema):
 
@@ -34,7 +32,7 @@ class FacetcollapsePlugin(plugins.SingletonPlugin):
 
             # This is a custom configuration option
             'ckanext.facetcollapse.default': [ignore_missing,
-                                                      text_type],
+                                              text_type],
         })
 
         return schema
