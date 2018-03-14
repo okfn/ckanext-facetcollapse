@@ -11,7 +11,7 @@ This extension makes the search facets collapsible.
 There are four available default states, which can be set via the ``ckanext.facetcollpase.default`` configuration option:
 
 - Collapse all: ``collapse`` (This is the default value)
-- Collapse all but first`: ``expand-first``
+- Collapse all but first: ``expand-first``
 - Collapse empty: ``expand-navs``
 - Collapse none: ``expand-all``
 
