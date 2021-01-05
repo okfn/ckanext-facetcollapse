@@ -1,0 +1,8 @@
+facetcollapse_js:
+  filter: rjsmin
+  output: ckanext-facetcollapse/%(version)s_facetcollapse_js.js
+  extra:
+    preload:
+      - base/main
+  contents:
+    - facetcollapse.js
