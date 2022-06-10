@@ -1,0 +1,9 @@
+{% ckan_extends %}
+
+{% block facet_list_heading %}
+<h2 class="module-heading {% if h.get_param_int('_%s_limit' % name) == 0 %}h2_{{ name }}{% endif %}">
+	<i class="fa fa-filter"></i>
+	{% set title = title or h.get_facet_title(name) %}
+	{{ title }}
+</h2>
+{% endblock %}
