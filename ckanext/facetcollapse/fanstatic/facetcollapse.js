@@ -22,10 +22,8 @@ $( document ).ready(function() {
       }
   }
 
-  // add collapsed class to modules
-  $(".secondary .filters .collapse:not(.in)").parent().addClass("collapsed");
-
   if (selected_facets.length == 0) {
+
     // if set as default state, expand first nav
     $(".secondary .filters[data-collapse-default='expand-first'] nav").first().parent().addClass("in").parent().addClass("expanded");
 
@@ -35,15 +33,21 @@ $( document ).ready(function() {
     // if set as default state, expand all modules
     $(".secondary .filters[data-collapse-default='expand-all'] .collapse").addClass("in").parent().addClass("expanded");
 
+    // add collapsed class to modules
+    $(".secondary .filters .collapse:not(.in)").parent().addClass("collapsed");
+
   } else {
+    // add collapsed class to modules
+    $(".secondary .filters .collapse:not(.in)").parent().addClass("collapsed");
+
     for (var i = 0; i < selected_facets.length; i++) {
-      // $('.' + selected_facets[i]).parent().addClass("in").parent().addClass("expanded");
       $this = $('.' + selected_facets[i]);
       $this.next().collapse('toggle');
       $this.parent().toggleClass("collapsed expanded");
       $this.children(".toggle-icon").toggleClass( "fa-caret-square-o-right fa-caret-square-o-down" );
     }
   }
+
 
   // add toggle icons
   $( ".secondary .filters .collapsed .module-heading" ).append( '<i class="toggle-icon fa fa-caret-square-o-right" aria-hidden="true"></i>' );
