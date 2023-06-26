@@ -1,8 +1,6 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
-from six import text_type
-
 
 def facetcollapse_default():
     '''facetcollapse helper function.'''
@@ -27,12 +25,12 @@ class FacetcollapsePlugin(plugins.SingletonPlugin):
     def update_config_schema(self, schema):
 
         ignore_missing = toolkit.get_validator('ignore_missing')
+        unicode_safe = toolkit.get_validator('unicode_safe')
 
         schema.update({
 
             # This is a custom configuration option
-            'ckanext.facetcollapse.default': [ignore_missing,
-                                              text_type],
+            'ckanext.facetcollapse.default': [ignore_missing, unicode_safe],
         })
 
         return schema
