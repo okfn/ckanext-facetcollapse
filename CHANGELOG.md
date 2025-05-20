@@ -1,4 +1,4 @@
-# Next release
+# 0.1.2
 Fix manifest file to include webassets.yml file.
 
 # 0.1.1
