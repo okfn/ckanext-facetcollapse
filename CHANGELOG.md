@@ -1,3 +1,6 @@
+# Next release
+Fix manifest file to include webassets.yml file.
+
 # 0.1.1
 Change version number because 4 years ago we released 0.1.0
 
