@@ -1,4 +1,4 @@
 include README.rst
 include LICENSE
 include requirements.txt
-recursive-include ckanext/facetcollapse *.html *.json *.js *.less *.css *.mo
+recursive-include ckanext/facetcollapse *.html *.json *.js *.less *.css *.mo, *.yaml
