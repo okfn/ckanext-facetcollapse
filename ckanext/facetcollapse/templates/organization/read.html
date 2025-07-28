@@ -9,4 +9,11 @@
     </div>
     <a class="close no-text hide-filters"><i class="fa fa-times-circle"></i><span class="text">close</span></a>
   </div>
+
+  {% if h.ckan_version().split('.')[1] | int >= 9 %}
+    {% include 'facetcollapse/snippets/facetcollapse_asset.html' %}
+  {% else %}
+    {% include 'facetcollapse/snippets/facetcollapse_resource.html' %}
+  {% endif %}
+
 {% endblock %}
