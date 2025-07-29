@@ -1,5 +1,7 @@
-"""Tests for plugin.py."""
-import ckanext.facetcollapse.plugin as plugin
+import pytest
+from ckan import plugins
 
+
+@pytest.mark.usefixtures("with_plugins")
 def test_plugin():
-    pass
+    assert plugins.plugin_loaded("facetcollapse")

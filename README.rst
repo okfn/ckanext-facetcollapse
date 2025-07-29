@@ -1,10 +1,18 @@
+.. image:: https://github.com/okfn/ckanext-facetcollapse/workflows/Tests%20Facet%20Collapse%20Extension%20on%20CKAN%202.10/badge.svg
+   :target: https://github.com/okfn/ckanext-facetcollapse/actions/workflows/test-ckan-2.10.yml
+   :alt: CKAN 2.10
+
+.. image:: https://github.com/okfn/ckanext-facetcollapse/workflows/Tests%20Facet%20Collapse%20Extension%20on%20CKAN%202.11/badge.svg
+   :target: https://github.com/okfn/ckanext-facetcollapse/actions/workflows/test-ckan-2.11.yml
+   :alt: CKAN 2.11
 
 =====================
 ckanext-facetcollapse
 =====================
 
-This extension makes the search facets collapsible.
-
+| This extension makes the search facets collapsible.
+| This includes facets for the dataset and organization pages.
+| 
 .. image:: https://i.imgur.com/lTn4bZB.png
 
 
@@ -43,3 +51,7 @@ do::
     git clone https://github.com/okfn/ckanext-facetcollapse.git
     cd ckanext-facetcollapse
     python setup.py develop
+
+Add the plugin to CKAN settings with
+
+    ckan.plugins = facetcollapse
