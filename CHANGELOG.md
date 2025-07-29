@@ -1,4 +1,8 @@
 # Next release
+
+Add proposed PRs here
+
+# 0.1.3
  - [#11](https://github.com/okfn/ckanext-facetcollapse/pull/11) Include facets collapsing on the organization page.
    Also, tests started with GitHub actions.
 
