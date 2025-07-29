@@ -8,7 +8,7 @@ jobs:
       options: --user root
     services:
       solr:
-        image: ckan/ckan-solr:2.11
+        image: ckan/ckan-solr:2.11-solr9
       postgres:
         image: ckan/ckan-postgres-dev:2.11
         env:

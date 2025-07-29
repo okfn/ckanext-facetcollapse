@@ -44,3 +44,7 @@ do::
     git clone https://github.com/okfn/ckanext-facetcollapse.git
     cd ckanext-facetcollapse
     python setup.py develop
+
+Add the plugin to CKAN settings with
+
+    ckan.plugins = facetcollapse
