@@ -1,3 +1,6 @@
+# Next release
+ - [#11](https://github.com/okfn/ckanext-facetcollapse/pull/11) Include facets collapsing on the organization page.
+
 # 0.1.2
 Fix manifest file to include webassets.yml file.
 

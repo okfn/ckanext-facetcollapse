@@ -3,7 +3,8 @@
 ckanext-facetcollapse
 =====================
 
-This extension makes the search facets collapsible.
+This extension makes the search facets collapsible.  
+This includes facets for the dataset and organization pages.  
 
 .. image:: https://i.imgur.com/lTn4bZB.png
 
